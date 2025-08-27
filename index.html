@@ -1,24 +1,290 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 1: Andrómeda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 1:Andrómeda</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Analizar cómo construir una identidad digital auténtica y coherente en múltiples plataformas.</li>
+                                        <li>Gestionar la identidad en plataformas como TikTok, Instagram y foros, manteniendo la coherencia de la imagen.</li>
+                                        <li>Identificar incoherencias en publicaciones y perfiles.</li>
+                                        <li>Diferenciar entre un perfil personal y uno profesional.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago: Verdadero o Falso Exprés</strong></li>
+                                        <li><strong class="tactic-highlight">Conexión Ada</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge Express</strong></li>
+                                        <li><strong class="tactic-highlight">Ticket de Salida / Tweet de Aprendizaje</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>"Tweet de Aprendizaje" individual resumiendo el consejo clave sobre coherencia en la identidad digital.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Recuerdo Relámpago: Verdadero o Falso Exprés ⏰ 5 minutos</h2>
+                <p>Activar conocimientos previos sobre identidad digital y reputación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago: Verdadero o Falso Exprés ⏰ 3 minutos</h3>
+                            <p>Revisar diapositiva 2. Recuerdo Relámpago: Verdadero o Falso Exprés El maestro lanza frases sobre identidad digital. Pulgar arriba si es verdadero, abajo si es falso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Qué tal, equipo! Hoy vamos a hablar de una parte fundamental de su formación en Gnius Club que, normalmente, vivirán a su propio ritmo: la Ciudadanía Digital. A lo largo del año, tendrán 16 misiones de autoaprendizaje, como aventuras secundarias que completarán en casa para convertirse en verdaderos líderes digitales. Estas misiones son cruciales para su desarrollo.
+
+Pero para que entiendan de qué van y cómo funcionan, hoy haremos algo especial: vamos a completar la primera misión, 'Andrómeda', todos juntos aquí en clase. Será nuestra única sesión de Ciudadanía Digital en vivo. Para arrancar, vamos a calentar motores. Pulgar arriba si creen que esta frase es verdadera, abajo si es falsa. Primera frase: ‘Ser ciudadano digital es solo saber usar redes sociales’. ¿Qué opinan? Otra más: ‘Lo que comparto en línea puede afectar cómo me ven los demás’. Respondan con honestidad. No hay respuestas correctas, solo un punto de partida para la misión que hoy conquistaremos juntos."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Revisar diapositiva 3 “Conexión con la nueva misión”. Activar el tema de coherencia de imagen en múltiples plataformas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Ahora pensemos juntos: ¿Qué creen que implica tener una imagen coherente en distintas redes sociales? Hoy vamos a analizar cómo lo que publicamos en TikTok, Instagram o incluso foros puede construir o debilitar nuestra reputación digital.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conexión Ada ⏰ 20 minutos</h2>
+                <p>Analizar la coherencia entre publicaciones y gestionar identidad en distintas plataformas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión Ada ⏰ 20 minutos</h3>
+                            <p>Revisar diapositiva 4. Conexión Ada: Misión Andrómeda.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Es momento de conectarse con Ada, su guía de IA para todas las misiones de Ciudadanía Digital. Ingresen desde su computadora, activen su sesión y escriban Misión Andrómeda cuando Ada lo indique. Aunque las próximas 15 misiones las harán por su cuenta, hoy Ada los guiará en esta exploración de su identidad digital aquí, con todo el equipo. Pongan mucha atención, observen bien los ejemplos y reflexionen: ¿cómo quieren ser percibidos en línea? Recuerden: cada clic deja huella.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Ada ⏰ 0 minutos</h3>
+                            <p>Revisar diapositiva 5. Timer 20 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge Express ⏰ 10 minutos</h2>
+                <p>Introducir el reto de reflexión colectiva sobre la coherencia digital.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Revisar diapositiva 6. Challenge Express: World Café.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Hoy vamos a debatir como expertos digitales. Imaginen dos casos: uno es Mariana, que tiene un perfil en TikTok con coreografías, pero en su perfil de LinkedIn habla como si fuera una ejecutiva de empresa; el otro es Diego, que sube frases motivadoras en Instagram, pero en un foro escribe comentarios hirientes. ¿Cómo perciben eso? ¿Qué impacto tienen estas contradicciones? Cambien de mesa, compartan su análisis y escuchen otras perspectivas.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge Express ⏰ 5 minutos</h3>
+                            <p>Revisar diapositiva 7. Analizar diferencias entre perfil personal y profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Reflexionen con su equipo: ¿qué rasgos tiene un perfil profesional? ¿Cómo se distingue de uno personal? ¿Es posible conservar autenticidad en ambos? Dialoguen con ejemplos reales o cercanos.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Challenge Express ⏰ 1 minutos</h3>
+                            <p>Segunda estación: Analizar ejemplos de incoherencias reales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“¿Qué contradicciones encontraron en los casos de Mariana y Diego? ¿Creen que esos contrastes restan credibilidad? Piensen cómo afecta eso su reputación digital.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Revisar diapositiva 8. Cierre grupal. Cada equipo comparte 1 idea central.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Escuchemos una idea por equipo. ¿Qué descubrieron sobre mantener una identidad coherente en redes? ¿Qué les sorprendió al comparar plataformas?”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Ticket de Salida / Tweet de Aprendizaje ⏰ 5 minutos</h2>
+                <p>Sintetizar el aprendizaje como consejo clave sobre identidad digital.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ticket de Salida / Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Revisar diapositiva 9. Escribir una frase tipo tweet + hashtag. Compartir con compañero.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Escriban un tweet con lo que se llevan de esta misión. Puede ser una advertencia, una reflexión o un consejo. Por ejemplo: ‘Lo que subo en una red, me acompaña en todas. #CoherenciaDigital’.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ticket de Salida / Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Leer el tweet en parejas y comentarlo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Compartan con alguien su tweet. ¿Qué aprendiste del otro? ¿Coinciden? Escuchar también es aprender.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Ticket de Salida / Tweet de Aprendizaje ⏰ 1 minutos</h3>
+                            <p>Revisar diapositiva 10. Cierre</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Hoy han completado su primera misión de Ciudadanía Digital, y lo han hecho de forma excelente. A partir de ahora, las siguientes 15 misiones serán su responsabilidad, una aventura que continuarán desde casa. Y cada vez que completen una, estarán un paso más cerca de ser líderes digitales, y también de una gran recompensa.
+
+Por completar 'Andrómeda', cada uno ha ganado 10 Mon-e. (Pausa para captar atención). Permítanme explicarles qué es Mon-e. Es la moneda virtual exclusiva de Gnius Club, y es cómo recompensamos su crecimiento y dedicación. Funciona así:
+
+Por cada misión de tecnología que completen en clase, ganarán 5 Mon-e. Si todo el equipo termina, ¡esos puntos se duplican a 10!
+Por cada misión de Ciudadanía Digital que completen en casa, ganarán 10 Mon-e, porque valoramos enormemente su autoaprendizaje y responsabilidad.
+
+¿Y para qué sirve Mon-e? Podrán canjear su Mon-e acumulado por horas de impresión 3D para traer a la realidad sus propios diseños y proyectos. Es una recompensa tangible por su esfuerzo intelectual.
+
+Pero, y esto es lo más importante, hay una condición: el acceso a la tienda de impresión 3D solo se desbloquea al completar las 16 misiones de Ciudadanía Digital. Consideren estas misiones su 'pase de acceso'. No importa cuánto Mon-e acumulen, la llave para usarlo es demostrar que son ciudadanos digitales completos y responsables.
+
+Así que felicidades por sus primeros 10 Mon-e. La misión 'Andrómeda' está completa. La próxima semana, estén atentos a Gnius Space, donde se activará su segunda misión para que la completen en casa. ¡Gran trabajo hoy!”
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
